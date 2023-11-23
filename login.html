@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav style="background-color: black; height: 80px;">
+        <a href="index.html"><img src="img/8.jpg"></a>
+        <div class="navlink">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html" target="_blank">ABOUT</a></li>
+                <li><a href="Shop Now!.html" target="_blank">SHOPPING</a></li>
+                <li><a href="https://www.omnicalculator.com/health/body-shape" target="_blank">TOOLS</a></li>
+                <li><a href="contact.html" target="_blank">CONTACT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="login">
+        <div class="formbox">
+            <div class="buttonbox">
+                <div id="btn1"></div>
+                <button type="button" class="togglebtn" onclick="login()">LOGIN</button>
+                <button type="button" class="togglebtn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="checkbox" class="check-box"><span>I agree to the Terms and Conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn1");
+        function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px"
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Homepage Banner */
+
+.header {
+    min-height: 140vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(2,9,30,0.7)), url(img/1.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+nav img {
+    width: 70px;
+}
+
+.navlink {
+    flex: 1;
+    text-align: right;
+}
+
+.navlink ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlink ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.navlink ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f4433f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlink ul li:hover::after {
+    width: 100%;
+}
+
+.textbox {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textbox h1 {
+    font-size: 102px;
+}
+
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.homebtn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 13px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.homebtn:hover {
+    border: 1px solid #3678f4;
+    background: #3678f4;
+    transition: 0.7s;
+}
+
+/* Courses Offered */
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 18px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coursecol {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.coursecol:hover {
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.1);
+}
+
+/* Personal Training */
+
+.ptrain {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.traincol {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.traincol img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(231, 67, 67, 0.63);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: rgb(15, 14, 14);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+.amazon a{
+    text-decoration: none;
+    color: black;
+}
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Tools */
+
+.tools .row img {
+    height: 450px;
+}
+
+.tools {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.tooling:hover {
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+}
+
+.toolcol {
+    flex-basis: 48%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.toolcol img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.toolcol p {
+    font-size: 25px;
+    padding: 0;
+}
+
+.toolcol h3 {
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.toolcol a {
+    color: black;
+    text-decoration: none;
+}
+
+.toolcol a:hover {
+    text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.678);
+}
+
+/* Testimonials */
+
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testcol {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+.testcol img {
+    height: 50px;
+    margin-left: 50px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.testcol p {
+    padding: 0;
+}
+
+.testcol h3 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* Call to Action */
+
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/8.jpg);
+    background-position: center;
+    background-size: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color:white;;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.ctabtn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 13px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.ctabtn:hover {
+    border: 1px solid #3678f4;
+    background: #3678f4;
+    transition: 0.7s;
+}
+
+/* Footer */
+
+.footer {
+    height: 180px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: black;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer h4, a {
+    color: gray;
+}
+
+/* ❌❌❌❌❌❌❌❌❌❌❌❌HOMEPAGE END❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌ */
+
+.subheader {
+    height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/8.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+    
+}
+
+.subheader h1 {
+    font-size: 80px;
+    margin-top: 100px;
+}
+
+/* ABOUT US CONTENT */
+
+.aboutus {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.aboutcol {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.aboutcol img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.aboutcol h1 {
+    padding-top: 0;
+}
+
+.aboutcol p {
+    padding: 15px 0 25px;
+}
+
+.aboutbtn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 13px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.aboutbtn:hover {
+    border: 1px solid #3678f4;
+    background: #3678f4;
+    transition: 0.7s;
+}
+
+/* ❌❌❌❌❌❌❌❌❌❌❌❌ABOUTPAGE END❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌ */
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contactus {
+    width: 80%;
+    margin: auto;
+}
+
+#sendmail {
+    color: gray;
+}
+
+/* ❌❌❌❌❌❌❌❌❌❌❌❌CONTACTPAGE END❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌ */
+
+.login {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/8.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.formbox {
+    border-radius: 10px;
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: white;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.buttonbox {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.togglebtn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn1 {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.input {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
